@@ -1,13 +1,11 @@
-@library ('my-shared-library') _
+@library ('library') _
 pipeline {
 agent any {
 
 stages {
   stage('build') {
       echo "this is the build step"
-    }
-  stage('test') {
-      echo "this is testing the code"
+      demo()
     }
 }
 }
